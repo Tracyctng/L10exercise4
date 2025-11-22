@@ -1,6 +1,6 @@
 // Import the necessary tools
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View, SectionList, TouchableOpacity, Image, Button } from 'react-native';
+import { StyleSheet, Text, View, SectionList, TouchableOpacity, Image, Button } from 'react-native';
 import React from 'react';
 
 export default function App() {
@@ -62,7 +62,7 @@ export default function App() {
     );
 
     return (
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
             <StatusBar style="auto" />
 
             {/* Add button + Full width border */}
@@ -94,7 +94,7 @@ export default function App() {
                     </TouchableOpacity>
                 </View>
             )}
-        </SafeAreaView>
+        </View>
     );
 }
 
